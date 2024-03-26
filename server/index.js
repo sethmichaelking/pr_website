@@ -12,6 +12,7 @@ app.use((_, res, next) => {
     next();
   });
 
+  //fefe
 app.use(express.static(path.join(__dirname + "/public")))
 app.listen(PORT, ()=> {
     console.log('listening on port PORT')
