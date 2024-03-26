@@ -1,6 +1,8 @@
 module.exports = {
     content: [
       './src/**/*.{js,jsx,ts,tsx}',
+      "node_modules/flowbite-react/lib/esm/**/*.js",
+
     ],
     theme: {
         extend: {
@@ -9,6 +11,9 @@ module.exports = {
             'bounce-short': 'bounce 1s ease-in-out 5',
             //horizontal fade
             'loop-scroll': 'loop-scroll 50s linear infinite',
+            'fade': 'fadeOut 5s ease-in-out',
+
+            
           },
           keyframes: {
             'loop-scroll': {
@@ -18,5 +23,8 @@ module.exports = {
           }     
         }
       },
-    plugins: [],
+      plugins: [
+        // ...
+        require("flowbite/plugin"),
+      ],
   }

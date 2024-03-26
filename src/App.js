@@ -4,7 +4,9 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Logos from './components/Logos';
 import ValueProp from './components/ValueProp';
-
+import Howitworks from './components/Howitworks'
+import { AccordionFx } from './components/Accordion';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,9 @@ function App() {
         <Hero/>
         <Logos/>
         <ValueProp/>
+        <Howitworks/>
+        <AccordionFx/>
+        <Footer/>
       </div>
     </div>
   );
